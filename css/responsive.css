@@ -1,0 +1,246 @@
+/* =====================
+   TABLET (768px - 1024px)
+===================== */
+@media (max-width: 1024px) {
+    .cities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .attractions {
+        grid-template-columns: 1fr;
+    }
+    
+    .sapa-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .final-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .final-image {
+        min-height: 400px;
+    }
+    
+    .final-text {
+        padding: 60px 40px;
+    }
+}
+
+/* =====================
+   MOBILE (max 768px)
+===================== */
+@media (max-width: 768px) {
+    /* Navigation */
+    .burger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        flex-direction: column;
+        background: rgba(26, 26, 26, 0.98);
+        width: 100%;
+        padding: 2rem;
+        transition: var(--transition);
+        gap: 1rem;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    
+    /* Hero */
+    .hero {
+        height: 100vh;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Sections */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-desc {
+        font-size: 1rem;
+    }
+    
+    .overview {
+        padding: 60px 20px;
+    }
+    
+    .cities-preview {
+        padding: 60px 20px;
+    }
+    
+    .cities-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* City Sections */
+    .city-section {
+        padding: 60px 20px;
+    }
+    
+    .city-title {
+        font-size: 2rem;
+    }
+    
+    .city-intro {
+        font-size: 1rem;
+    }
+    
+    .attractions {
+        gap: 2rem;
+    }
+    
+    .attraction-vertical img {
+        height: 400px !important;
+    }
+    
+    /* Final Section */
+    .final-text {
+        padding: 40px 30px;
+    }
+    
+    .final-text h2 {
+        font-size: 2rem;
+    }
+    
+    .final-text p {
+        font-size: 1rem;
+    }
+    
+    /* Map */
+    .map-header {
+        padding: 50px 20px;
+    }
+    
+    .map-header h1 {
+        font-size: 2rem;
+    }
+    
+    .map-header p {
+        font-size: 1rem;
+    }
+    
+    #map {
+        height: 500px;
+    }
+    
+    .city-info-card {
+        width: 95%;
+        max-height: 90vh;
+    }
+    
+    .city-info-content h2 {
+        font-size: 1.6rem;
+        padding: 1.5rem 2rem 0.5rem;
+    }
+    
+    .city-info-content p {
+        font-size: 1rem;
+        padding: 0 2rem 1.5rem;
+    }
+    
+    .city-info-content .btn {
+        margin: 0 2rem 2rem;
+    }
+}
+
+/* =====================
+   SMALL MOBILE (max 480px)
+===================== */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .city-title {
+        font-size: 1.8rem;
+    }
+    
+    .tags {
+        gap: 0.8rem;
+    }
+    
+    .tag {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+    
+    .city-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .final-text {
+        padding: 30px 20px;
+    }
+    
+    .final-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    #map {
+        height: 400px;
+    }
+    
+    .city-info-card {
+        width: 98%;
+    }
+    
+    .city-info-content img {
+        height: 220px;
+    }
+    
+    .close-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+/* =====================
+   LANDSCAPE MOBILE
+===================== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+}

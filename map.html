@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная карта Вьетнама</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🐉 Вьетнам</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="cities.html">Города</a></li>
+                <li><a href="map.html" class="active">Карта</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="map-section">
+        <div class="map-header">
+            <div class="container">
+                <h1>Интерактивная карта Вьетнама</h1>
+                <p>Интерактивная карта отмечает ключевые города: Ханой, Хошимин, Дананг, Хюэ, Нячанг, Муйне, Сапа. Нажмите на город — карточка откроется с кратким рассказом и изображениями.</p>
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+        <div id="city-info" class="city-info-card hidden">
+            <button class="close-btn">&times;</button>
+            <div class="city-info-content">
+                <img id="city-img" src="" alt="">
+
+
+                <h2 id="city-name"></h2>
+                <p id="city-description"></p>
+                <a id="city-link" href="" class="btn btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Вьетнам: Путешествие по Стране Дракона</p>
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="cities.html">Города</a>
+                <a href="map.html">Карта</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
